@@ -1,0 +1,21 @@
+<?php $this->extend('block_searchable'); ?>
+<?php $this->block('content'); ?>
+
+
+
+
+    <?php if ($this->dividerAddIcon): ?>
+    <?php if ($this->dividerIconTotop): ?>
+    <a href="#top" data-scrollto="top">
+    <?php endif; ?>
+        <i data-icon="&#x<?= $this->dividerIcon ?>;"></i>
+    <?php if ($this->dividerIconTotop): ?>
+    </a>
+    <?php endif; ?>
+    <?php endif; ?>
+    
+
+
+<?php //dump($this); ?>
+
+<?php $this->endblock(); ?>

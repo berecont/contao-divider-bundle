@@ -1,0 +1,54 @@
+{
+    "name": "berecont/contao-divider-bundle",
+    "description": "Erstellt Trennlinien",
+    "keywords": [
+        "contao",
+        "divider",
+        "trennlinie"
+    ],
+    "type": "contao-bundle",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Bernhard Renner",
+            "email": "bernhard@werbepanorama.at",
+            "homepage": "https://werbepanorama.at",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "bernhard@werbepanorama.at",
+        "issues": "https://github.com/berecont/contao-divider-bundle/issues",
+        "source": "https://github.com/berecont/contao-divider-bundle",
+        "forum": "https://community.contao.org/de"
+    },
+    "require": {
+        "contao/core-bundle": "^4.9",
+        "madeyourday/contao-rocksolid-icon-picker": "^2.0"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.3",
+        "contao/test-case": "^4.0",
+        "phpunit/phpunit": "^8.4",
+        "symfony/http-client": "4.4.*",
+        "symfony/phpunit-bridge": "4.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Berecont\\ContaoDividerBundle\\": "src/"
+        },
+        "classmap": [
+            "src/Resources/contao"
+        ],
+        "exclude-from-classmap": [
+            "src/Resources/contao/config",
+            "src/Resources/contao/dca",
+            "src/Resources/contao/languages",
+            "src/Resources/contao/templates"
+        ]
+    },
+    "extra": {
+        "contao-manager-plugin": "Berecont\\ContaoDividerBundle\\ContaoManager\\Plugin"
+    },
+    "version": "1.0-dev"
+}

@@ -1,0 +1,8 @@
+services:
+
+    # Contao content element Berecont\ContaoDividerBundle\Controller\ContentElement\DividerController
+    # We used annotations for tagging the frontend element category, the frontend element type and the frontend element template
+    Berecont\ContaoDividerBundle\Controller\ContentElement\DividerController:
+        autoconfigure: true
+        autowire: true
+
